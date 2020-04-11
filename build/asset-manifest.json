@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/email/assinatura/static/js/main.63f73f99.chunk.js",
+    "main.js.map": "/email/assinatura/static/js/main.63f73f99.chunk.js.map",
+    "runtime-main.js": "/email/assinatura/static/js/runtime-main.d644a1cc.js",
+    "runtime-main.js.map": "/email/assinatura/static/js/runtime-main.d644a1cc.js.map",
+    "static/js/2.233db9d8.chunk.js": "/email/assinatura/static/js/2.233db9d8.chunk.js",
+    "static/js/2.233db9d8.chunk.js.map": "/email/assinatura/static/js/2.233db9d8.chunk.js.map",
+    "index.html": "/email/assinatura/index.html",
+    "precache-manifest.eb7d2986ab1fab56689da67c5b46a3b9.js": "/email/assinatura/precache-manifest.eb7d2986ab1fab56689da67c5b46a3b9.js",
+    "service-worker.js": "/email/assinatura/service-worker.js",
+    "static/js/2.233db9d8.chunk.js.LICENSE.txt": "/email/assinatura/static/js/2.233db9d8.chunk.js.LICENSE.txt",
+    "static/media/fakeHeader.jpg": "/email/assinatura/static/media/fakeHeader.dbbbb05a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d644a1cc.js",
+    "static/js/2.233db9d8.chunk.js",
+    "static/js/main.63f73f99.chunk.js"
+  ]
+}

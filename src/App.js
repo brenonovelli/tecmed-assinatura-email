@@ -1,25 +1,50 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+
+import { Container } from './styles';
+import GlobalStyles from './styles/global';
+
+import Form from './components/Form';
+import Preview from './components/Preview';
 
 function App() {
+  const [data, setData] = useState({
+    name: 'Diogo Fialho',
+    position: 'Locação - Manutenção',
+    phone1: '21 994267306',
+    phone2: '21 24251231',
+    email: 'diogo@tecmed.com.br',
+  });
+
+  function handleBlur(e) {
+    const { name, value } = e.target;
+
+    switch (name) {
+      case 'name':
+        setData({ ...data, name: value });
+        break;
+      case 'position':
+        setData({ ...data, position: value });
+        break;
+      case 'phone1':
+        setData({ ...data, phone1: value });
+        break;
+      case 'phone2':
+        setData({ ...data, phone2: value });
+        break;
+      case 'email':
+        setData({ ...data, email: value });
+        break;
+      default:
+        setData(data);
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <GlobalStyles />
+      <Preview data={data} />
+      <Form onChange={handleBlur} data={data} />
+    </Container>
   );
 }
 
